@@ -25,14 +25,23 @@
             color: #003366;
         }
 
-        .calculator {
-            margin-top: 40px;
-            border: 2px dashed #0070f3;
-            border-radius: 10px;
-            padding: 40px;
-            text-align: center;
-            background: #fafafa;
-        }
+.calculator {
+    margin-top: 40px;
+}
+
+.calculator-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.calculator-right iframe {
+    width: 650px;
+    max-width: 100%;
+    height: 900px;
+    border: none;
+    border-radius: 12px;
+    background: white;
+}
     </style>
 </head>
 <body>
@@ -45,22 +54,14 @@
         adding them to the real company website.
     </p>
 
-    <div class="calculator">
-        
-       <iframe
-    src="https://eor-calculator-blush.vercel.app"
-    width="100%"
-    height="1100"
-    style="
-        border: none;
-        border-radius: 12px;
-        background: white;
-    "
-    loading="lazy"
-    title="Blue Lynx EOR Calculator">
-</iframe>
-
-    </div>
+<div class="calculator-right">
+    <iframe
+        src="https://eor-calculator-blush.vercel.app"
+        title="Blue Lynx EOR Calculator"
+        loading="lazy">
+    </iframe>
+</div>
+    
 </div>
 
 </body>
